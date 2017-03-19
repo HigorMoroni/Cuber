@@ -1,0 +1,1 @@
+document.write ('<header class="cabecalho"><a href="index.html"><img id="logo" src="_imagens/logo.jpg"></a><br/><span id="slogan">Porque tempo é dinheiro<br></span></header>');

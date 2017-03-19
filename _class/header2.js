@@ -1,0 +1,1 @@
+document.write ('<header class="cabecalho"><a href="index.html"><img id="logo" src="_imagens/logo.jpg"></a><br></header>');

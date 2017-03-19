@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CUBER - Painel do Usuário</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    	<link rel="icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+        <script type="text/javascript" src="_js/mascara.js"></script>
+        <script type="text/javascript" src="_js/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="_js/painel.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="_class/menu_topo_painel.js"></script>
+		<section class="tudo2">
+			<script type="text/javascript" src="_class/header2.js"></script>
+			<div class="corpo2">
+				<section class="laes">
+                <div class="pre-spoiler">
+                    <img id="xs" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';this.innerText = ''; this.value = 'Ocultar'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Leia Mais';}" class="link" src="_imagens/botaoPainel.png">
+				<div>
+					<div class="spoiler">
+						<div id='cssvmenu'>
+                        	<ul>
+                        		<li class="link pabrir7"><img src="_imagens/meio.png"></li>
+                        		<li class="selecionado"><a class="pabrir1"><span style="font-size: 16px">&#xf1b9; &nbsp SEJA UM MOTORISTA</span></a></li>
+                        		<li><a class="pabrir2"><span>&#xf002; &nbsp ENCONTRE VAGAS</span></a></li>
+                        		<li><a class="pabrir3"><span>&#xf2be; &nbsp ENCONTRE USUÁRIOS</span></a></li>
+                        		<li><a href='painel_motorista.html'><span>&#xf018; &nbsp PAINEL DO MOTORISTA</span></a></li>
+                        		<li><a class="pabrir5"><span>&#xf087; &nbsp REPUTAÇÃO</span></a></li>
+                        		<li><a class="pabrir6"><span>&#xf1da; &nbsp HISTÓRICO</span></a></li>
+                        		<li class='last'><a class="pabrir7"><span>&#xf013; &nbsp CONFIGURAÇÕES</span></a></li>
+                        	</ul>
+                        </div>
+                    </div>
+				</div>
+                </div>
+                <div class="ads">
+                	<center><a target="_blank" href="http://www.fatecpg.com.br"><script type="text/javascript" src="_js/ads.js"></script></a></center>
+                </div>
+                </section>
+                <div class="ladi">
+                    <h2 class="nomePainel">Painel do Usuário</h2>
+                    <div style="margin-top: 7%;" class="link4">
+						<p style="font-size: 20px;">Olá bem vindo, você está no painel do passageiro CUBER, nessa tela você poderá ter acesso às funcionalidades de encontrar outros usuários CUBER, verificar o seu nível de reputação, procurar por vagas anunciadas por e disponíveis para você, além de poder acessar todo o seu histórico no sistema. Caso queira alterar seus dados cadastrais, clique na opção configurações e siga atualize suas informações. Obrigado por entrar no time CUBER, nós vamos juntos com você na sua caminhada rumo ao futuro.</p>
+                        <p style="font-size: 20px;">Junte-se a nós no time de motoristas CUBER, e nos ajude a transportar cada vez mais futuros profissionais da nossa região. A Baixada Santista merece seu apoio, esperamos por você. Clique em SEJA UM MOTORISTA e confira e cadastre-se.</p>
+                    </div>
+                    <div class="link1 coisinha">
+                        <form style="margin-top: 7%;" id="form1" name="form1">
+                            <h1><span>Cadastro de Motorista</span></h1>
+                            <div class="col_left">
+                                <input type="text" maxlength="10" placeholder="&#xf2bb; RG" required/>
+                                <input type="text" maxlength="13" placeholder="&#xf2c2; Numero da CNH" required/>
+                            </div>
+                            <div class="col_right">
+                                <input type="password" maxlength="34" class="ko  borderleft" placeholder="&#xf069; Senha do CUBER" required/>
+                                <input type="text" class="" maxlength="10" placeholder="&#xf273; Validade" required/>
+                            </div>
+                            <input id="nomeM" type="text" maxlength="69" placeholder="&#xf007; Nome da Mãe" required>
+                            <input id="nomeP" type="text" maxlength="69" placeholder="&#xf2c0; Nome do Pai" required>
+                            <div class="col_left">
+                                <select style="width: 100%;" name="categoria" id="categoria" required>
+                                    <option value="" disabled selected hidden>&#xf2c3; Categoria da CNH</option>
+                                    <option value="a">A</option>
+                                    <option value="b">B</option>
+                                    <option value="c">C</option>
+                                    <option value="d">D</option>
+                                    <option value="e">E</option>
+                                    <option value="ab">AB</option>
+                                    <option value="ac">AC</option>
+                                    <option value="ad">AD</option>
+                                    <option value="ae">AE</option>
+                                </select>
+                            </div>
+                            <div class="col_right">
+                                <select style="width: 100%; border-bottom:none;" name="sexo" id="sexo" class="borderleft" required>
+                                    <option value="" disabled selected hidden>&#xf222; Sexo</option>
+                                    <option value="fem">Feminino</option>
+                                    <option value="mas">Maculino</option>
+                                </select>
+                            </div>
+                            <span id="input">&#xf030; Foto do Motorista
+                            <label for='selecao-arquivo' class="button black">Procurar</label>
+                            <input id='selecao-arquivo' type='file'></span>
+                            <center><img src="_imagens/botaoCadastro.png" alt="" usemap="#Map3"/></center>
+                            <map name="Map3" id="Map3">
+                                <area alt="" title="" href="cadastro_realizado.html" shape="rect" coords="51,25,139,61" />
+                            </map>
+                        </form>
+                    </div>
+                    <div class="link2 coisinha">
+                        <div class="busca">
+                            <form id="busca" name="busca">
+                                <select name="facul" id="facul" class="borderleft" required>
+                                    <option value="" disabled selected hidden>&#xf19c; Faculdade</option>
+                                    <option value="metodistaBer">Metodista Bertioga</option>
+                                    <option value="fabeBer">Faculdade Bertioga</option>
+                                    <option value="ifspCub">IFSP Cubatão</option>
+                                    <option value="uniespGua">UNIESP Guarujá</option>
+                                    <option value="unaerpGua">UNAERP Guarujá</option>
+                                    <option value="domGua">Dom Domênico Guarujá</option>
+                                    <option value="faitaIta">FAITA Itanhaém</option>
+                                    <option value="unidezIta">UNIDEZ Itanhaém</option>
+                                    <option value="metodistaIta">Metodista Itanhaém</option>
+                                    <option value="unifranMon">UNIFRAN Mongaguá</option>
+                                    <option value="fpbePer">Faculdade de Peruíbe</option>
+                                    <option value="uabPer">UAB Peruíbe</option>
+                                    <option value="alfaPG">Faculdade Alfa Praia Grande</option>
+                                    <option value="falsPG">FALS Praia Grande</option>
+                                    <option value="fatecPG">FATEC Praia Grande</option>
+                                    <option value="uniubePG">UNIUBE Praia Grande</option>
+                                    <option value="unisaPG">UNISA Praia Grande</option>
+                                    <option value="unidezPG">UNIDEZ Praia Grande</option>
+                                    <option value="esagsSan">ESAGS Santos</option>
+                                    <option value="esamcSan">ESAMC Santos</option>
+                                    <option value="fatecSan">FATEC Santos</option>
+                                    <option value="fgvSan">FGV Santos</option>
+                                    <option value="metodistaSan">Metodista Santos</option>
+                                    <option value="unaSan">UNA Santos</option>
+                                    <option value="unifespSan">UNIFESP Santos</option>
+                                    <option value="unilusSan">UNILUS Santos</option>
+                                    <option value="unimesSan">UNIMES Santos</option>
+                                    <option value="unimonteSan">UNIMONTE Santos</option>
+                                    <option value="unipSan">UNIP Santos</option>
+                                    <option value="unisantaSan">UNISANTA Santos</option>
+                                    <option value="unisantosSan">UNISANTOS Santos</option>
+                                    <option value="uspSan">USP Santos</option>
+                                    <option value="faelSV">FAEL São Vicente</option>
+                                    <option value="fatefSV">FATEF São Vicente</option>
+                                    <option value="fsvSV">FSV São Vicente</option>
+                                    <option value="unespSV">UNESP São Vicente</option>
+                                    <option value="unibrSV">UNIBR São Vicente</option>
+                                    <option value="unisaSV">UNISA São Vicente</option>
+                                    <option value="unoparSV">UNOPAR São Vicente</option>
+                                </select>
+                                <select style="height: 45px" class="borderleft" name="cidades" id="cidades" required>
+                                    <option value="" disabled selected hidden>&#xf277; Cidade</option>
+                                    <option value="bertioga">Bertioga</option>
+                                    <option value="cubatao">Cubatão</option>
+                                    <option value="guaruja">Guarujá</option>
+                                    <option value="itanhaem">Itanhaém</option>
+                                    <option value="mongagua">Mongaguá</option>
+                                    <option value="peruibe">Peruíbe</option>
+                                    <option value="praiaGrande">Praia Grande</option>
+                                    <option value="santos">Santos</option>
+                                    <option value="saoVicente">São Vicente</option>
+                                </select>
+                                <select class="borderleft" name="bairros" id="bairros" required>
+                                    <option value="" disabled selected hidden>&#xf041; Bairro</option>
+                                    <option value="aviacao">Aviação</option>
+                                    <option value="boqueirao">Boqueirão</option>
+                                    <option value="centro">Centro</option>
+                                    <option value="forte">Forte da Barra</option>
+                                    <option value="meuvi">Meuvi</option>
+                                    <option value="ocian">Ocian</option>
+                                    <option value="samambaia">Samambaia</option>
+                                    <option value="solemar">Solemar</option>
+                                    <option value="tude">Tude Bastos</option>
+                                </select>
+                                <select name="sexo" id="sexo" class="borderleft" required>
+                                    <option value="" disabled selected hidden>&#xf222; Sexo</option>
+                                    <option value="fem">Feminino</option>
+                                    <option value="mas">Maculino</option>
+                                </select>
+                            </form>
+                            <a href="#"><img class="botaoBuscar" src="_imagens/botaoBuscar.png"/></a>
+                        </div>
+                            <center><table cellspacing="30" class="result">
+                                <tr>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/edu.png"/><br><br>
+                                            FATEC BS<br>
+                                            SÃO VICENTE<br>
+                                            HUMAITÁ<br>
+                                            MASCULINO<br>
+                                            CORSA<br>
+                                            3 VAGAS<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabriredu" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/raul.png"/><br><br>
+                                            UNISANTA<br>
+                                            PERUIBE<br>
+                                            CARAGUAVA<br>
+                                            MASCULINO<br>
+                                            UNO MILLE<br>
+                                            4 VAGAS<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirraul" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/andre.png"/><br><br>
+                                            FATEC PG<br>
+                                            ITANHAÉM<br>
+                                            SUARÃO<br>
+                                            MASCULINO<br>
+                                            GOL<br>
+                                            4 VAGAS<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirandre" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/cascola.png"/><br><br>
+                                            UNAERP<br>
+                                            SANTOS<br>
+                                            EMBARÉ<br>
+                                            MASCULINO<br>
+                                            CAMARO<br>
+                                            1 VAGA<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrircascola" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/seupai.png"/><br><br>
+                                            FALS PG<br>
+                                            PRAIA GRANDE<br>
+                                            SAMAMBAIA<br>
+                                            MASCULINO<br>
+                                            TWISTER<br>
+                                            1 VAGA<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirpai" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/dani.png"/><br><br>
+                                            UNIFESP<br>
+                                            GUARUJÁ<br>
+                                            GUAIUBA<br>
+                                            FEMININO<br>
+                                            C3<br>
+                                            2 VAGAS<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirdani" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/jefferson.png"/><br><br>
+                                            UNESP<br>
+                                            BERTIOGA<br>
+                                            ENSEADA<br>
+                                            MASCULINO<br>
+                                            FIESTA<br>
+                                            2 VAGAS<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirjefferson" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="colunas">
+                                            <br><img src="_imagens/motoristas/batatinha.png"/><br><br>
+                                            UNIDEZ<br>
+                                            MONGAGUÁ<br>
+                                            AGENOR<br>
+                                            MASCULINO<br>
+                                            CB300R<br>
+                                            1 VAGA<br>
+                                        </div>
+                                        <div class="botaoPegar">
+                                            <img class="pabrirbatatinha" src="_imagens/motoristas/botaoPegar.png"/>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table></center>
+                    </div>
+                    <div class="link3 coisinha">
+                        <iframe class="user" src="usuarios.html"></iframe>
+                    </div>
+                    <div class="link5 coisinha">
+                        <iframe class="user" src="reputacao.html"></iframe>
+                    </div>
+                    <div style="margin-top: -28px" class="link6 coisinha">
+                        <center><div class="inline">
+                            <div>
+                            <img src="_imagens/historico/acessos.png"/>
+                            <p>Total de Acessos: 302</p>
+                            <img src="_imagens/historico/viagens.png"/>
+                            <p>Total de Viagens: 11</p>
+                            </div>
+                        </div></center>
+                    </div>
+                    <div class="link7 coisinha">
+                        <form style="margin-top: 4%;" id="form" name="form">
+                            <h1><span>Configuração de Conta</span></h1>
+                            <div class="col_left">
+                                <input type="text" maxlength="34" placeholder="&#xf007; usuário" class="ok" value="Thiago Felipe" required/>
+                                <input type="email" maxlength="34" placeholder="&#xf0e0; e-mail" value="thiaguinhodapg@gmail.com" required/>
+                            </div>
+                            <div class="col_right">
+                                <input type="password" maxlength="34" class="ko  borderleft" placeholder="&#xf069; senha" value="**********" required/>
+                                <input type="email" class="" maxlength="34" placeholder="&#xf003; e-mail secundário" required/>
+                            </div>
+                            <h1 id="sec"><span>Detalhes Pessoais</span></h1>
+                            <span id="input">&#xf030; Foto de Perfil
+                            <label for='selecao-arquivo' class="button black">Procurar</label>
+                            <input id='selecao-arquivo' type='file'></span>
+                            <div class="col_left">
+                                <input name="fixo" type="text" placeholder="&#xf095; Telefone Fixo" required id="fixo" maxLength="13" size="13" onKeyPress="fone(this,document.form.curso)"/>
+                                <input name="curso" type="text" placeholder="&#xf19d; Curso" required value="ADS-Noturno"/>
+                                <input name="sem" type="text" placeholder="&#xf073; Semestre" value="3º SEMESTRE" required/>
+                                <select name="facul" id="facul" required>
+                                    <option disabled hidden>&#xf19c; Faculdade</option>
+                                    <option value="metodistaBer">Metodista Bertioga</option>
+                                    <option value="fabeBer">Faculdade Bertioga</option>
+                                    <option value="ifspCub">IFSP Cubatão</option>
+                                    <option value="uniespGua">UNIESP Guarujá</option>
+                                    <option value="unaerpGua">UNAERP Guarujá</option>
+                                    <option value="domGua">Dom Domênico Guarujá</option>
+                                    <option value="faitaIta">FAITA Itanhaém</option>
+                                    <option value="unidezIta">UNIDEZ Itanhaém</option>
+                                    <option value="metodistaIta">Metodista Itanhaém</option>
+                                    <option value="unifranMon">UNIFRAN Mongaguá</option>
+                                    <option value="fpbePer">Faculdade de Peruíbe</option>
+                                    <option value="uabPer">UAB Peruíbe</option>
+                                    <option value="alfaPG">Faculdade Alfa Praia Grande</option>
+                                    <option value="falsPG">FALS Praia Grande</option>
+                                    <option selected value="fatecPG">FATEC Praia Grande</option>
+                                    <option value="uniubePG">UNIUBE Praia Grande</option>
+                                    <option value="unisaPG">UNISA Praia Grande</option>
+                                    <option value="unidezPG">UNIDEZ Praia Grande</option>
+                                    <option value="esagsSan">ESAGS Santos</option>
+                                    <option value="esamcSan">ESAMC Santos</option>
+                                    <option value="fatecSan">FATEC Santos</option>
+                                    <option value="fgvSan">FGV Santos</option>
+                                    <option value="metodistaSan">Metodista Santos</option>
+                                    <option value="unaSan">UNA Santos</option>
+                                    <option value="unifespSan">UNIFESP Santos</option>
+                                    <option value="unilusSan">UNILUS Santos</option>
+                                    <option value="unimesSan">UNIMES Santos</option>
+                                    <option value="unimonteSan">UNIMONTE Santos</option>
+                                    <option value="unipSan">UNIP Santos</option>
+                                    <option value="unisantaSan">UNISANTA Santos</option>
+                                    <option value="unisantosSan">UNISANTOS Santos</option>
+                                    <option value="uspSan">USP Santos</option>
+                                    <option value="faelSV">FAEL São Vicente</option>
+                                    <option value="fatefSV">FATEF São Vicente</option>
+                                    <option value="fsvSV">FSV São Vicente</option>
+                                    <option value="unespSV">UNESP São Vicente</option>
+                                    <option value="unibrSV">UNIBR São Vicente</option>
+                                    <option value="unisaSV">UNISA São Vicente</option>
+                                    <option value="unoparSV">UNOPAR São Vicente</option>
+                                </select>
+                            </div>
+                            <div class="col_right">
+                                <input name="celular" type="text" placeholder="&#xf10b; Telefone Celular" value="(13) 99766-5930" required id="celular" maxLength="14" size="14" onKeyPress="fone(this,document.data)"/>
+                                <input style="height: 40px" type="text" class="borderleft" id="data" name="data" maxlength="8" placeholder="&#xf133; Data de Nascimento" value="10/10/1986" required/>
+                                <input name="bairro" type="text" placeholder="&#xf041; Bairro" required value="Samambaia">
+                                <select style="height: 45px;" class="borderleft" name="cidades" id="cidades" required>
+                                    <option value="" disabled selected hidden>&#xf277; Cidade</option>
+                                    <option value="bertioga">Bertioga</option>
+                                    <option value="cubatao">Cubatão</option>
+                                    <option value="guaruja">Guarujá</option>
+                                    <option value="itanhaem">Itanhaém</option>
+                                    <option value="mongagua">Mongaguá</option>
+                                    <option value="peruibe">Peruíbe</option>
+                                    <option selected value="praiaGrande">Praia Grande</option>
+                                    <option value="santos">Santos</option>
+                                    <option value="saoVicente">São Vicente</option>
+                                </select>
+                            </div>
+                            <center><img src="_imagens/botaoCadastro.png" alt="" usemap="#Map4"/></center>
+                            <map name="Map4" id="Map4">
+                                <area alt="" title="" href="atualizacao_realizada.html" shape="rect" coords="51,25,139,61" />
+                            </map>
+                        </form>
+                    </div>
+                    <div class="linkedu coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/eduok.png"></center>
+                    </div>
+                    <div class="linkraul coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/raulok.png"></center>
+                    </div>
+                    <div class="linkandre coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/andreok.png"></center>
+                    </div>
+                    <div class="linkcascola coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/cascolaok.png"></center>
+                    </div>
+                    <div class="linkpai coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/seupaiok.png"></center>
+                    </div>
+                    <div class="linkdani coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/daniok.png"></center>
+                    </div>
+                    <div class="linkjefferson coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/jeffersonok.png"></center>
+                    </div>
+                    <div class="linkbatatinha coisinha">
+                    	<center><img style="margin-top: 10%" src="_imagens/motoristas/batatinhaok.png"></center>
+                    </div>
+                </div>
+			</div>
+		</section>
+		<script type="text/javascript" src="_class/footer.js"></script>
+	</body>
+</html>

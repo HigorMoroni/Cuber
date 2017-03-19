@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CUBER - Cadastro</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    	<link rel="icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+        <script language="JavaScript" src="_js/mascara.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript" src="_class/menu_topo.js"></script>
+		<section class="tudo">
+			<script type="text/javascript" src="_class/header.js"></script>
+			<div class="corpo">
+					<form id="form" name="form">
+                        <h1><span>Cadastro de Aluno</span></h1>
+						<div class="col_left">
+							<input type="text" maxlength="34" placeholder="&#xf007; usuário" class="ok" required/>
+							<input type="email" maxlength="34" placeholder="&#xf0e0; e-mail" required/>
+						</div>
+						<div class="col_right">
+							<input type="password" maxlength="34" class="ko  borderleft" placeholder="&#xf069; senha" required/>
+							<input type="email" class="" maxlength="34" placeholder="&#xf003; confirme o e-mail" required/>
+						</div>
+
+                        <h1 id="sec"><span>Detalhes Pessoais</span></h1>
+
+						<input id="nome" type="text" maxlength="69" placeholder="&#xf040; Nome Completo" required>
+
+						<div class="col_left">
+							<input name="cpf" type="text" placeholder="&#xf2bb; CPF" class="onfocus" required id="cpf" size="15" maxlength="14" onkeyup="maskCPF(this)" onKeyPress="return Apenas_Numeros(event);"/>
+							<input type="text" maxlength="34" placeholder="&#xf015; Endereço" required/>
+							<select style="cursor: url(_cursores/cur1054.cur)" name="cidades" id="cidades" required>
+								<option value="" disabled selected hidden>&#xf277; Cidade</option>
+								<option value="bertioga">Bertioga</option>
+								<option value="cubatao">Cubatão</option>
+								<option value="guaruja">Guarujá</option>
+								<option value="itanhaem">Itanhaém</option>
+								<option value="mongagua">Mongaguá</option>
+								<option value="peruibe">Peruíbe</option>
+								<option value="praiaGrande">Praia Grande</option>
+								<option value="santos">Santos</option>
+								<option value="saoVicente">São Vicente</option>
+							</select>
+						</div>
+						<div class="col_right">
+							<input type="number" class="" maxlength="34" placeholder="&#xf19d; Registro de Aluno (RA)" required/>
+							<input type="text" class="" maxlength="34" placeholder="&#xf041; Bairro" required/>
+							<input name="telefone" type="text" placeholder="&#xf10b; Telefone Celular" required id="telefone" maxLength="14" size="14" onKeyPress="fone(this,document.form.facul)"/>
+						</div>
+
+						<select name="facul" id="facul" required>
+							<option value="" disabled selected hidden>&#xf19c; Faculdade</option>
+							<option value="metodistaBer">Metodista Bertioga</option>
+							<option value="fabeBer">Faculdade Bertioga</option>
+							<option value="ifspCub">IFSP Cubatão</option>
+							<option value="uniespGua">UNIESP Guarujá</option>
+							<option value="unaerpGua">UNAERP Guarujá</option>
+							<option value="domGua">Dom Domênico Guarujá</option>
+							<option value="faitaIta">FAITA Itanhaém</option>
+							<option value="unidezIta">UNIDEZ Itanhaém</option>
+							<option value="metodistaIta">Metodista Itanhaém</option>
+							<option value="unifranMon">UNIFRAN Mongaguá</option>
+							<option value="fpbePer">Faculdade de Peruíbe</option>
+							<option value="uabPer">UAB Peruíbe</option>
+							<option value="alfaPG">Faculdade Alfa Praia Grande</option>
+							<option value="falsPG">FALS Praia Grande</option>
+							<option value="fatecPG">FATEC Praia Grande</option>
+							<option value="uniubePG">UNIUBE Praia Grande</option>
+							<option value="unisaPG">UNISA Praia Grande</option>
+							<option value="unidezPG">UNIDEZ Praia Grande</option>
+							<option value="esagsSan">ESAGS Santos</option>
+							<option value="esamcSan">ESAMC Santos</option>
+							<option value="fatecSan">FATEC Santos</option>
+							<option value="fgvSan">FGV Santos</option>
+							<option value="metodistaSan">Metodista Santos</option>
+							<option value="unaSan">UNA Santos</option>
+							<option value="unifespSan">UNIFESP Santos</option>
+							<option value="unilusSan">UNILUS Santos</option>
+							<option value="unimesSan">UNIMES Santos</option>
+							<option value="unimonteSan">UNIMONTE Santos</option>
+							<option value="unipSan">UNIP Santos</option>
+							<option value="unisantaSan">UNISANTA Santos</option>
+							<option value="unisantosSan">UNISANTOS Santos</option>
+							<option value="uspSan">USP Santos</option>
+							<option value="faelSV">FAEL São Vicente</option>
+							<option value="fatefSV">FATEF São Vicente</option>
+							<option value="fsvSV">FSV São Vicente</option>
+							<option value="unespSV">UNESP São Vicente</option>
+							<option value="unibrSV">UNIBR São Vicente</option>
+							<option value="unisaSV">UNISA São Vicente</option>
+							<option value="unoparSV">UNOPAR São Vicente</option>
+                        </select>
+                        <center><img src="_imagens/botaoCadastro.png" alt="" usemap="#Map3"/></center>
+                            <map name="Map3" id="Map3">
+                                <area alt="" title="" href="cadastro_realizado.html" shape="rect" coords="51,25,139,61" />
+                            </map>
+					</form>
+			</div>
+		</section>
+		<script type="text/javascript" src="_class/footer.js"></script>
+	</body>
+</html>

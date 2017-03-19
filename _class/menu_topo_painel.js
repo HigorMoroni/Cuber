@@ -1,0 +1,1 @@
+document.write ('<table class="menu"><tr style="margin-top: 0"><td rowspan="2"><a class="pabrir7"><img src="_imagens/user.png">&nbsp &nbsp</td><td style="position: relative; transform: translateY(55%);" id="caixa"><a id="botaoEntrar" href="login.html">SAIR &nbsp &#xf0a8;</a></td></tr><tr><td><span id="bemvindo">BEM VINDO</span></td></tr></table>');

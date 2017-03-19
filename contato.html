@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:b="http://www.w3.org/1999/XSL/Transform">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CUBER - Contato</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    	<link rel="icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/x-icon">
+    	<link rel="shortcut icon" href="_imagens/favicon.ico" type="image/vnd.microsoft.icon">
+	</head>
+	<body>
+        <b:if cond=’data:blog.pageType == &quot;item&quot;’>
+        <div id=’subscribe’>
+        <SCRIPT language="JavaScript" type="text/javascript">alert("Atenção! Essa página só funcionará corretamente em monitores widescreem. Desculpe!")</SCRIPT>
+        </div>
+        </b:if>
+        <script type="text/javascript" src="_class/menu_topo.js"></script>
+		<section class="tudo">
+            <script type="text/javascript" src="_class/header.js"></script>
+			<div class="corpo">
+				<link rel="stylesheet" type="text/css" href="_css/form_contato.css"/>
+                <script language="JavaScript" src="_js/mascara.js"></script>
+                <h2>Entre em contato com a equipe CUBER</h2>
+				<form id="form">
+					<fieldset id="detalhes">
+						<label for="nome">Nome:</label>
+						<input type="text" name="nome" required/>
+						<label for="email">E-mail:</label>
+						<input type="email" name="email" required/>
+						<label for="telefone">Telefone:</label>
+                        <input name="telefone" type="text" required id="telefone" maxLength="14" size="14" onKeyPress="fone(this,document.form.assunto)"/>
+                        <label for="assunto">Assunto:</label>
+						<input type="text" name="assunto" required/>
+					</fieldset>
+					<fieldset id="mensagem">
+						<label id="ultima" for="msg">O que gostaria de nos dizer?</label><br>
+						<textarea name="msg" rows="0" cols="0"></textarea><br>
+						<input value="ENVIAR" name="enviar" class="enviar" type="button" onClick='javascript:location.href="contato_realizado.html"'/>
+					</fieldset>
+                </form>
+                <form id="redes">
+                <fieldset id="twitter">
+                    <br>
+                    <h4 style="padding-left: 10%;">Twitter</h4>
+                    <a class="twitter-timeline" data-lang="pt" data-width="350" data-height="300" href="https://twitter.com/cuberoficial">Tweets de Cuber</a>
+                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </fieldset>
+                <fieldset id="face">
+                    <div id="fb-root"></div>
+                    <script>
+                        (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id))
+                                return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                        <br>
+                        <h4 style="padding-left: 10%;">Facebook</h4>
+                        <div class="fb-page" data-href="https://www.facebook.com/Cuber-Caronas-Universit%C3%A1rias-da-Baixada-e-Regi%C3%A3o-1102108029884594/" data-tabs="timeline" data-width="340" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Cuber-Caronas-Universit%C3%A1rias-da-Baixada-e-Regi%C3%A3o-1102108029884594/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/Cuber-Caronas-Universit%C3%A1rias-da-Baixada-e-Regi%C3%A3o-1102108029884594/">Cuber - Caronas Universitárias da Baixada e Região</a>
+                            </blockquote>
+                        </div>
+                </fieldset>
+                </form>
+                <div class="contatinhos">
+                    <h4>Suporte</h4>
+                    <strong>Suporte ao produto</strong><br>
+                    Entre em contato com nosso suporte CUBER:<br>
+                    — suporte@cuber.16mb.com<br><br>
+                    <strong>Dúvidas sobre a Política de Privacidade</strong><br>
+                    — Entre em contato conosco.<br>
+                    — Ou <a style="color: white;" href="privacidade.html">clique aqui</a><br><br>
+                    <strong>Dúvidas comerciais</strong><br>
+                    Entre em contato com nossa equipe comercial:<br>
+                    — contato@cuber.16mb.com<br><br>
+                    Se preferir, entre em contato pelo formulário ao lado<br><br>
+                    <h4> Telefones </h4>
+                    <strong>CUBER - Praia Grande</strong><br>
+                    Fone: (13) 3878-3878 / (13) 3878-3878<br>
+                    Celular: (13) 98868-5814 <img src="_imagens/whatsapp-icon.png" alt="whatsapp" height="18"><br><br>
+                    <strong>CUBER - Itanhaém</strong><br>
+                    Fone: (13) 3434-3434
+                </div>
+                <h4> Localização </h4>
+                <div class="cont">
+                    <script class="mapa" src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:300px;width:340px;'>
+                        <div id='gmap_canvas' style='height:300px;width:340px;'></div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important;}</style>
+                    </div>
+                    <script class="mapa" type='text/javascript'>
+                        function init_map(){
+                            var myOptions = {zoom:14, center:new google.maps.LatLng(-24.005939243150323,-46.4103067462799), mapTypeId: google.maps.MapTypeId.ROADMAP};
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-24.005939243150323,-46.4103067462799)});
+                            infowindow = new google.maps.InfoWindow({content:'<strong style="color: black">Cuber </strong><br><span style="color: black">Praça 19 de Janeiro, 144 - Praia Grande/SP</span><br>'});
+                            google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
+            </div>
+		</section>
+        <script type="text/javascript" src="_class/footer.js"></script>
+	</body>
+</html>

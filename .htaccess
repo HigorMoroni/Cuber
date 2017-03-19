@@ -1,0 +1,78 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+
+
+
+
+
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW ERRORPAGEID:veRema
+ErrorDocument 404 /erro404.html
+redirect 301 /acessibilidade /acessibilidade.html
+redirect 301 /deficientes /acessibilidade.html
+redirect 301 /auxilio /acessibilidade.html
+redirect 301 /cadastro /cadastro.html
+redirect 301 /cadastrar /cadastro.html
+redirect 301 /comecar /cadastro.html
+redirect 301 /fazerparte /cadastro.html
+redirect 301 /entrar /login.html
+redirect 301 /login /login.html
+redirect 301 /painel /login.html
+redirect 301 /motorista /dirigir.html
+redirect 301 /sermotorista /dirigir.html
+redirect 301 /serummotorista /dirigir.html
+redirect 301 /dirigir /dirigir.html
+redirect 301 /passageiro /login.html
+redirect 301 /viajar /login.html
+redirect 301 /buscarpassagens /login.html
+redirect 301 /serpassageiro /login.html
+redirect 301 /usuario /login.html
+redirect 301 /user /login.html
+redirect 301 /logar /login.html
+redirect 301 /autenticar /login.html
+redirect 301 /contato /contato.html
+redirect 301 /telefones /contato.html
+redirect 301 /telefone /contato.html
+redirect 301 /email /contato.html
+redirect 301 /emails /contato.html
+redirect 301 /suporte /contato.html
+redirect 301 /localizacao /contato.html
+redirect 301 /facebook https://www.facebook.com/Cuber-Caronas-Universitárias-da-Baixada-e-Região-1102108029884594
+redirect 301 /twitter http://www.twitter.com/cuberoficial
+redirect 301 /youtube http://www.youtube.com/cuberoficial
+redirect 301 /youtube http://www.instagram.com/cuberoficial
+redirect 301 /home /index.html
+redirect 301 /inicio /index.html
+redirect 301 /inicial /index.html
+redirect 301 /cuber /index.html
+redirect 301 /index /index.html
+redirect 301 /html /index.html
+redirect 301 /saibamais /index.html
+redirect 301 /saiba /index.html
+redirect 301 /noticias /noticias.html
+redirect 301 /novas /noticias.html
+redirect 301 /news /noticias.html
+redirect 301 /novidades /noticias.html
+redirect 301 /privacidade /privacidade.html
+redirect 301 /politica /privacidade.html
+redirect 301 /politicadeprivacidade /privacidade.html
+redirect 301 /quem_somos /quem_somos.html
+redirect 301 /quemsomos /quem_somos.html
+redirect 301 /nossahistoria /quem_somos.html
+redirect 301 /nossa_historia /quem_somos.html
+redirect 301 /seguranca /seguranca.html
+redirect 301 /protocolo /seguranca.html
+redirect 301 /blindagem /seguranca.html
+redirect 301 /SI /seguranca.html
+redirect 301 /redefinir /redefinir_senha.html
+redirect 301 /redefinirsenha /redefinir_senha.html
+redirect 301 /senha /redefinir_senha.html
+redirect 301 /esqueciminhasenha /redefinir_senha.html
+redirect 301 /minhasenha /redefinir_senha.html
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE veRema:ERRORPAGEID
+

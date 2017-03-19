@@ -1,0 +1,100 @@
+div.corpo{
+    height: 1080px;
+}
+label {
+    font-size: 20px;
+    color: white;
+    font-family: 'NarrowThin', sans-serif, FontAwesome;
+}
+fieldset {
+    border: none;
+}
+fieldset#detalhes {
+    float: left;
+    width: 45%;
+}
+fieldset#mensagem {
+    float: right;
+    width: 47%;
+    text-align: right;
+}
+fieldset#face {
+    float: right;
+}
+fieldset#twitter {
+    float: left;
+}
+textarea {
+    height: 263px;
+    float: right;
+}
+form#form {
+    float: right;
+    padding: 10px 20px 0 20px;
+    width: 60%;
+    margin-top: 70px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow:0px 0 100px #ccc;
+    -moz-box-shadow:0px 0 100px #ccc;
+    box-shadow:0px 0 100px #ccc;
+}
+form#redes{
+    width: 66%;
+    float: right;
+    padding: 10px 20px 0 20px;
+    margin-top: 20px;
+}
+input, textarea {
+    padding: 8px;
+    margin: 4px 0 20px 0;
+    background: #fff;
+    width: 90%;
+    font-size: 14px;
+    color: black;
+    border: none;
+
+
+    -webkit-transition: background 0.3s linear;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow:0px 0 50px #ccc;
+    -moz-box-shadow:0px 0 50px #ccc;
+    box-shadow:0px 0 50px #ccc;
+}
+input:hover, textarea:hover {
+    background: #ddd;
+}
+input.enviar {
+    font-family: 'NarrowMedium', sans-serif, FontAwesome;
+    width: 130px;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    background-color: #57ad57;
+
+    -webkit-transition: -webkit-box-shadow 0.3s linear;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+input.enviar:hover {
+    background-color: #408240;
+    -webkit-box-shadow: 0px 0px 20px #555;
+    -moz-box-shadow: 0px 0px 20px #aaa;
+    box-shadow: 0px 0px 20px #555;
+    cursor:  pointer;
+}
+label#ultima{
+    text-align: right;
+}
+h4{
+    margin-left: 5%;
+    font-size: 20pt;
+    font-family: 'NarrowNews', sans-serif, FontAwesome;
+    color: white;
+}
